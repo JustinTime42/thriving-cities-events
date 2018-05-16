@@ -1,0 +1,16 @@
+.topnav {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    overflow-y: hidden;
+    transition: 0.5s;
+   
+}
+
+.topnav a:hover {
+    color:grey;
+}
