@@ -1,0 +1,18 @@
+.intro {
+    padding-top:10px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+iframe {
+
+    height: 315px;  
+    width: 480px;
+}
+
+.introText {
+    width: 480px; 
+    align-self: center;
+}

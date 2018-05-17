@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 // import CitiesList from './components/citieslist/CitiesList'
 // import EventModal from './components/eventmodal/EventModal'
 // import Intro from './components/intro/Intro'
-// import MediaHome from './components/mediahome/MediaHome'
+import Intro from './components/intro/Intro'
 import Navbar from './components/navbar/NavBar'
 import './App.css'
 
@@ -16,11 +16,12 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        {/* <EventModal event={this.showEvent} />
-        <CityModal city={this.showCity} />
-        <MediaHome />
-        <CitiesButton />
         <Intro />
+        {/* <EventModal event={this.showEvent} />
+        <CityModal city={this.showCity} /> 
+        
+       } <CitiesButton />
+        
         <CitiesList /> */}
       </div>
     )

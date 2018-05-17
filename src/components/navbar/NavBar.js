@@ -6,21 +6,22 @@ const NavBar = () => {
         let burgerID = document.getElementById("burgerButton")
         burgerID.classList.toggle("is-active")
         if (burgerID.classList.contains("is-active")){            
-            document.getElementById("navBar").style.height="100%"            
+            document.getElementById("navBar").style.height="100%"                  
         } else {
-            document.getElementById("navBar").style.height="50px"           
+            document.getElementById("navBar").style.height="50px"            
         }
     }
     return (
+       
         <header id="navBar">
             <div className="topnav">
-                <h3>Thriving Cities Events</h3>
+                <h2>Thriving Cities Events</h2>
                 <button id="burgerButton" className="hamburger hamburger--spin" type="button" onClick={onClick}>
                     <span className="hamburger-box">
                         <span className="hamburger-inner"></span>
                     </span>   
                 </button>
-            </div>
+            </div>            
             <nav className="navLinks">
                 <div>
                     <a href="http://thrivingcities.com/">Thriving Cities Homepage</a>
@@ -31,8 +32,8 @@ const NavBar = () => {
                 <div>
                     <a href="#">Sign Up For Our Newletter</a>
                 </div>
-            </nav>
-        </header>
+            </nav>          
+        </header>     
     )
 }
 
