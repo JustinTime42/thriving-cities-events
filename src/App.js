@@ -13,11 +13,13 @@ class App extends Component {
       showSignupModal: false,
       showEventModal: false,
       eventList:[],
+      selectedEvent: {},
     }
   }
 
-  handleSignupModal = () => {
+  handleSignupModal = (event) => {
     this.setState({showSignupModal: !this.state.showSignupModal})
+    this.setState({selectedEvent: event})
   }
 
   handleEventModal = () => {
@@ -38,7 +40,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <SignupModal show={this.state.showSignupModal} handleSignupModal={this.handleSignupModal}/>
+        <SignupModal show={this.state.showSignupModal} handleSignupModal={this.handleSignupModal} selectedEvent={this.state.selectedEvent}/>
         <Navbar handleSignupModal={this.handleSignupModal} />
         <Intro />
         <EventsList handleSignupModal={this.handleSignupModal} eventList={this.state.eventList} />

@@ -1,13 +1,13 @@
 import React from 'react'
 
 const EventCard = ({ handleSignupModal, event }) => {
-    
+
     let date = new Date(event.dateandtime)  
     let timeZoneName = { timeZoneName: 'short' }
     let emailString = `mailto:${event.email}?Subject=Regarding%20${event.title}`
 
     const emailClick = () => {
-        handleSignupModal()
+        handleSignupModal(event)
     }
 
     return (
