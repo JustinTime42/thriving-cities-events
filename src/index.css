@@ -3,3 +3,28 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+@media screen and (min-width:1200px) {
+  body {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+#mc_embed_signup{
+  background:#fff; 
+  clear:left; 
+  font:14px Helvetica,Arial,sans-serif; 
+}
+
+form {
+  text-align: center;
+}
+
+.submit_container {
+  padding-top: 1em;
+}
+.formEmailButton{
+  margin-right: 1em;
+}

@@ -8,18 +8,26 @@
     background-color: white;
     overflow-y: hidden;
     justify-content: flex-end;
+    padding-bottom: 1em;    
+}
+
+button {
+    border-radius: 1em;
 }
 
 .topnav {
     height:50px;    
     transition: 0.7s;
-    display: flex;    
+    display: flex; 
+    
 }
 
 .navLinks {   
     margin-right: 10px;
     text-align: right;
 }
+
+
 
 .topnav a:hover {
     color:grey;
@@ -54,11 +62,16 @@ button:focus {outline:0;}
         
     }
     .topnav {
-        width:480px;
+        flex-basis: 100%;
         margin-left: auto;
         margin-right: auto;
         justify-content: space-between;
+        
     }
+
+    
+
+    
 
 }
 
@@ -80,6 +93,7 @@ button:focus {outline:0;}
 
     .navLinks {
         justify-content: center;
+        text-align: center;
     }
     #navBar {
         justify-content: space-between;

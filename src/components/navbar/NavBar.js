@@ -1,7 +1,11 @@
 import React from 'react'
 import './navbar.css'
 
-const NavBar = () => {
+const NavBar = ({handleSignupModal}) => {
+
+    const emailClick = () => {
+        handleSignupModal()
+    }
     const onClick = () => {
         let burgerID = document.getElementById("burgerButton")
         burgerID.classList.toggle("is-active")
@@ -22,15 +26,9 @@ const NavBar = () => {
                     </span>   
                 </button>
             </div>            
-            <nav className="navLinks">
+            <nav className="navLinks">                
                 <div>
-                    <a href="http://thrivingcities.com/">Thriving Cities Homepage</a>
-                </div>
-                <div>
-                    <a href="#">Find Your City</a>
-                </div>
-                <div>
-                    <a href="#">Sign Up For Our Newletter</a>
+                    <button onClick={emailClick}>Sign Up For Our Newletter</button>
                 </div>
             </nav>          
         </header>     

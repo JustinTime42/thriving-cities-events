@@ -1,28 +1,47 @@
 import React, { Component } from 'react'
-// import CityModal from './components/citymodal/CityModal'
-// import CitiesButton from './components/citiesbutton/CitiesButton'
-// import CitiesList from './components/citieslist/CitiesList'
-// import EventModal from './components/eventmodal/EventModal'
-// import Intro from './components/intro/Intro'
+import SignupModal from './components/signupmodal/SignupModal'
+import EventsList from './components/eventslist/EventsList'
 import Intro from './components/intro/Intro'
 import Navbar from './components/navbar/NavBar'
+
 import './App.css'
 
 class App extends Component {
-  toggleMenu = () => {
+  constructor() {
+    super()
+    this.state = {
+      showSignupModal: false,
+      showEventModal: false,
+      eventList:[],
+    }
+  }
+
+  handleSignupModal = () => {
+    this.setState({showSignupModal: !this.state.showSignupModal})
+  }
+
+  handleEventModal = () => {
+    this.setState({showEventModal: !this.state.showEventModal})
+  }
+
+  componentDidMount() {
+    fetch("https://thrivingcities.herokuapp.com/events")
+    .then(response => response.json())
+    .then(events => {
+      let eventsList = []
+      events.forEach(event => eventsList.push(event))
+      this.setState({eventList: events})
+    }) 
     
   }
+
   render() {
     return (
       <div className="App">
-        <Navbar />
+        <SignupModal show={this.state.showSignupModal} handleSignupModal={this.handleSignupModal}/>
+        <Navbar handleSignupModal={this.handleSignupModal} />
         <Intro />
-        {/* <EventModal event={this.showEvent} />
-        <CityModal city={this.showCity} /> 
-        
-       } <CitiesButton />
-        
-        <CitiesList /> */}
+        <EventsList handleSignupModal={this.handleSignupModal} eventList={this.state.eventList} />
       </div>
     )
   }

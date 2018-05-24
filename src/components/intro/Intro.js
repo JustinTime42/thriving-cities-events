@@ -4,7 +4,10 @@ const Intro = () => {
 
     return (
         <div className="intro">
-            <iframe src="https://www.youtube.com/embed/5iBQG03HSeU" allowFullScreen></iframe>
+         
+            <div className="iframe-container">
+               <iframe title="Intro Video" className="resp-iframe" src="https://www.youtube.com/embed/5iBQG03HSeU" allow="encrypted-media" allowFullScreen></iframe>
+            </div>
             <div className="introText">
                 <p>
                 Thriving Cities is a group of unconventional urbanists with a unique understanding of, and approach to, cities.
