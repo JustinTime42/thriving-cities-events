@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import SignupModal from './components/signupmodal/SignupModal'
+import EventModal from './components/eventmodal/EventModal'
 import EventsList from './components/eventslist/EventsList'
 import Intro from './components/intro/Intro'
 import Navbar from './components/navbar/NavBar'
@@ -22,8 +23,9 @@ class App extends Component {
     this.setState({selectedEvent: event})
   }
 
-  handleEventModal = () => {
+  handleEventModal = (event) => {
     this.setState({showEventModal: !this.state.showEventModal})
+    this.setState({selectedEvent: event})
   }
 
   componentDidMount() {
@@ -41,9 +43,10 @@ class App extends Component {
     return (
       <div className="App">
         <SignupModal show={this.state.showSignupModal} handleSignupModal={this.handleSignupModal} selectedEvent={this.state.selectedEvent}/>
+        <EventModal show={this.state.showEventModal} handleEventModal={this.handleEventModal} selectedEvent={this.state.selectedEvent} />
         <Navbar handleSignupModal={this.handleSignupModal} />
         <Intro />
-        <EventsList handleSignupModal={this.handleSignupModal} eventList={this.state.eventList} />
+        <EventsList handleSignupModal={this.handleSignupModal} eventList={this.state.eventList} handleEventModal={this.handleEventModal}/>
       </div>
     )
   }

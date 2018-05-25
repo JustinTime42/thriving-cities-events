@@ -15,6 +15,9 @@ const Intro = () => {
 Thriving Cities is committed to helping scholars, foundations, city officials, religious leaders, politicians, business people, nonprofits, and residents alike answer the question, what does it mean and take to thrive in my city and how can I contribute?
                 </p>
             </div>
+            <div className="signupLink">
+            <a href="http://eepurl.com/dv5RL9">Sign up for our NewsLetter</a>"
+            </div>
         </div>
     )
     

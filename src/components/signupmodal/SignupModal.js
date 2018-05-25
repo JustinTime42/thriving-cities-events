@@ -1,7 +1,7 @@
 import React from 'react'
 import {Modal} from 'react-bootstrap'
 
-const EmailModal = ({show, handleSignupModal, selectedEvent}) => {
+const SignupModal = ({show, handleSignupModal, selectedEvent}) => {
 
     let titleText = "Sign up for our email newsletter!"
     let bodyText = "We'll keep you in the loop on exciting events and important announcements!"
@@ -61,5 +61,5 @@ const EmailModal = ({show, handleSignupModal, selectedEvent}) => {
     return null
 }
 
-export default EmailModal
+export default SignupModal
 
