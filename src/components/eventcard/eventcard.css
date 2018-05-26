@@ -1,0 +1,54 @@
+.cardText {      
+    padding-top: 1em;
+    padding-left: 1em;
+    display: flex; 
+    flex-direction: row;    
+    justify-content: space-around;
+}
+
+.detail {
+    width: 100px;
+    align-self: center;
+}
+
+.shortdescription {
+    display: none;
+}
+
+.title-large {
+    display:none;
+    
+}
+
+@media screen and (min-width:767px) {
+    .title-large {
+        display:initial;       
+    }
+    .title-small {
+        display: none;
+    }
+    .cardText {
+        flex-direction: column;
+    }    
+}
+
+@media screen and (min-width:1200px) {
+   
+    .detail {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
+        flex-wrap: nowrap;
+    }
+
+    .detail div {
+        margin-right: 1em;
+    }
+
+
+    .shortdescription {
+        display: initial;
+    }
+}

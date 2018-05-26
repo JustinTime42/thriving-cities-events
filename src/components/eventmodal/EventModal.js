@@ -25,7 +25,7 @@ const EventModal = ({show, handleEventModal, selectedEvent}) => {
                         <div className="date"><p>{date.toLocaleString('en-US',timeZoneName)}</p></div>
                         <div className="location"><p>{selectedEvent.location}</p></div>                       
                         {selectedEvent.description}  
-                        <a href={emailString} target="_top">Contact Us</a>
+                        <a href={emailString} target="_top">Email Us</a>
                         <div className="signupLink">
                         <a href="http://eepurl.com/dv5RL9">Attend {selectedEvent.title}</a>"
                         </div>                    

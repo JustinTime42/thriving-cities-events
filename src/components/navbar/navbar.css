@@ -2,12 +2,12 @@
     color: black;
     text-decoration: none;
     font-family: "Lato", sans-serif;
-    height: 50px;
+    height: 60px;
     width: 100%;
     z-index: 1;
     background-color: white;
     overflow-y: hidden;
-    justify-content: flex-end;
+    justify-content: flex-end;    
     padding-bottom: 1em;    
 }
 
@@ -16,18 +16,16 @@ button {
 }
 
 .topnav {
-    height:50px;    
+    height:60px;    
     transition: 0.7s;
     display: flex; 
-    
 }
 
 .navLinks {   
+    margin-top: 10px;
     margin-right: 10px;
     text-align: right;
 }
-
-
 
 .topnav a:hover {
     color:grey;
@@ -50,17 +48,18 @@ a {
 
 button:focus {outline:0;}
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 767px) {
     .topnav h2 {
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 960px) {
-    .topnav h2 {
-        flex-basis: 70%;
-        
+@media screen and (min-width: 767px) {
+
+    .hamburger, .navLinks {
+        display: none;
     }
+
     .topnav {
         flex-basis: 100%;
         margin-left: auto;
@@ -68,42 +67,7 @@ button:focus {outline:0;}
         justify-content: space-between;
         
     }
-
-    
-
-    
-
 }
 
-@media screen and (min-width: 960px){
-    .hamburger {
-        display: none;
-    }
-
-    #navBar, .navLinks{        
-        height: 10%;
-        display: flex;        
-    }
-
-    .topnav{
-        margin-left: 5%;
-        text-align: left;        
-        flex-basis: 30%;
-    }
-
-    .navLinks {
-        justify-content: center;
-        text-align: center;
-    }
-    #navBar {
-        justify-content: space-between;
-    }
-    .navLinks div {
-        justify-content: center;
-        flex-basis:30%;
-    
-    }
-
-}
 
 

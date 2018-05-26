@@ -28,7 +28,7 @@ const NavBar = ({handleSignupModal}) => {
             </div>            
             <nav className="navLinks">                
                 <div>
-                    <button onClick={emailClick}>Sign Up For Our Newletter</button>
+                    <a href="http://thrivingcities.com" target="_blank">Visit Thriving Cities website</a>
                 </div>
             </nav>          
         </header>     

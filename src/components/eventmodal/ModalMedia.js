@@ -6,9 +6,6 @@ const ModalMedia = ({selectedEvent}) =>
 {
     return (
         <Carousel>
-            <Carousel.Item className="carousel">
-                <iframe title="Intro Video" className="modalVideo" src={selectedEvent.videourl} allow="encrypted-media" allowFullScreen></iframe>
-            </Carousel.Item> 
             {
                 selectedEvent.images.map((image, i) => {
                     return (

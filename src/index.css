@@ -2,14 +2,33 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: 
 }
 
-@media screen and (min-width:1200px) {
-  body {
-    width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-  }
+.card {
+  padding-top:10px;
+  padding-bottom:10px;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 1px solid black;
+  margin-bottom: 1em;
+}
+
+.resp-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 15px;
+}
+
+.media-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  border-radius: 15px; 
+  
 }
 
 #mc_embed_signup{
@@ -28,3 +47,52 @@ form {
 .formEmailButton{
   margin-right: 1em;
 }
+
+@media screen and (min-width:560px) {
+  body {
+    width: 560px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width:767px) {
+  body {
+    width: 767px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .card {
+    display: flex;
+    
+    justify-content: center;
+    border: none;
+  }
+  .event-card {
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+  .resp-media {
+      position: relative;
+      width: 600px;
+      height: 338px;
+      
+  }
+  .media-container {
+      padding-top: 0;
+      width: 600px;
+      flex:none;
+      flex-basis: 66%;
+  }
+
+}
+
+@media screen and (min-width:1200px) {
+  body {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+

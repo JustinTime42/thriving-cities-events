@@ -25,7 +25,9 @@ class App extends Component {
 
   handleEventModal = (event) => {
     this.setState({showEventModal: !this.state.showEventModal})
-    this.setState({selectedEvent: event})
+    if (event) {
+      this.setState({selectedEvent: event})
+    }     
   }
 
   componentDidMount() {
