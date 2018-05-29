@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: 
 }
 
 .card {
@@ -27,8 +26,7 @@ body {
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
-  border-radius: 15px; 
-  
+  border-radius: 15px;   
 }
 
 #mc_embed_signup{
@@ -44,6 +42,7 @@ form {
 .submit_container {
   padding-top: 1em;
 }
+
 .formEmailButton{
   margin-right: 1em;
 }
@@ -63,8 +62,7 @@ form {
     margin-left: auto;
   }
   .card {
-    display: flex;
-    
+    display: flex;    
     justify-content: center;
     border: none;
   }
@@ -73,19 +71,13 @@ form {
     border-radius: 15px;
     margin-bottom: 10px;
   }
-  .resp-media {
-      position: relative;
-      width: 600px;
-      height: 338px;
-      
-  }
+  
   .media-container {
       padding-top: 0;
       width: 600px;
       flex:none;
       flex-basis: 66%;
   }
-
 }
 
 @media screen and (min-width:1200px) {
@@ -94,5 +86,10 @@ form {
     margin-right: auto;
     margin-left: auto;
   }
+  .resp-media {
+    position: relative;
+    width: 600px;
+    height: 338px;      
+}
 }
 

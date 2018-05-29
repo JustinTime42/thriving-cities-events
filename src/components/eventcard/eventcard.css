@@ -16,8 +16,7 @@
 }
 
 .title-large {
-    display:none;
-    
+    display:none;    
 }
 
 @media screen and (min-width:767px) {
@@ -38,15 +37,13 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        align-items: center;
-        
+        align-items: center;        
         flex-wrap: nowrap;
     }
 
     .detail div {
         margin-right: 1em;
     }
-
 
     .shortdescription {
         display: initial;

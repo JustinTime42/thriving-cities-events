@@ -2,8 +2,6 @@ import React from 'react'
 import EventCard from '../eventcard/EventCard.js'
 
 const EventsList = ({ eventList, handleSignupModal, handleEventModal }) => {
-
-    
  
     return (        
         <div>       

@@ -9,13 +9,12 @@ const ModalMedia = ({selectedEvent}) =>
             {
                 selectedEvent.images.map((image, i) => {
                     return (
-                        <Carousel.Item className="carousel" key={image.title}>
-                            <img alt={image.title} src={image.url} />
+                        <Carousel.Item className="modal-media-container" key={image.title}>
+                            <img className="modal-media" alt={image.title} src={image.url} />
                         </Carousel.Item>
                     )
                 })
-            } 
-            
+            }             
         </Carousel>
     )
 }

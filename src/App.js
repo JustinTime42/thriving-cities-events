@@ -4,7 +4,6 @@ import EventModal from './components/eventmodal/EventModal'
 import EventsList from './components/eventslist/EventsList'
 import Intro from './components/intro/Intro'
 import Navbar from './components/navbar/NavBar'
-
 import './App.css'
 
 class App extends Component {
@@ -38,7 +37,6 @@ class App extends Component {
       events.forEach(event => eventsList.push(event))
       this.setState({eventList: events})
     }) 
-    
   }
 
   render() {

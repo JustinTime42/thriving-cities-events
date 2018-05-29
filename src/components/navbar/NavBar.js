@@ -30,6 +30,9 @@ const NavBar = ({handleSignupModal}) => {
                 <div>
                     <a href="http://thrivingcities.com" target="_blank">Visit Thriving Cities website</a>
                 </div>
+                <div>
+                    <a href="http://eepurl.com/dv5RL9" target="_blank">Get Our Email Newsletter</a>
+                </div>
             </nav>          
         </header>     
     )
