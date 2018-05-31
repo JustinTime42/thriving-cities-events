@@ -1,10 +1,11 @@
 import React from 'react'
 import EventCard from '../eventcard/EventCard.js'
+import './eventlist.css'
 
 const EventsList = ({ eventList, handleSignupModal, handleEventModal }) => {
  
     return (        
-        <div>       
+        <div className="card-list">       
             {
                 eventList.map(event => {                    
                     return (            

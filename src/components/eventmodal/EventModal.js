@@ -30,7 +30,7 @@ const EventModal = ({show, handleEventModal, selectedEvent}) => {
     if (show) {
         return (    
            <div className="static-modal">
-                <Modal show={show} onHide={onClose}>
+                <Modal show={show} onHide={onClose} bsSize="large">
                     <Modal.Header>
                         <Modal.Title style={{textAlign: "center"}}>{selectedEvent.title}</Modal.Title>
                     </Modal.Header>
@@ -43,15 +43,16 @@ const EventModal = ({show, handleEventModal, selectedEvent}) => {
                             </div>                            
                             <div className="modal-detail">
                                 <p>{selectedEvent.location}</p>
-                                <input type="button" id="mapButton" onClick={onShowMap} value="Show Map" />
-                            </div>                            
-                        </div>          
+                                <input className="button map-button" type="button" id="mapButton" onClick={onShowMap} value="Show Map" />
+                            </div> 
+                            <a href={selectedEvent.mailchimp}>Attend {selectedEvent.title}</a>                           
+                        </div>    
                         
                         <iframe id="event-map" frameBorder="0" className="test hide" src={mapUrl} allowFullScreen></iframe>           
-                        {selectedEvent.description}                          
-                        <div className="signupLink">
-                        <a href={selectedEvent.mailchimp}>Attend {selectedEvent.title}</a>
-                        </div>                    
+                        <div><p>{selectedEvent.description}</p></div>   
+                        <div className="close-button">
+                            <input className="button" type="button" onClick={onClose} value="Close" />
+                        </div>                 
                     </Modal.Body>                    
                 </Modal>
             </div>

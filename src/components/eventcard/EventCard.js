@@ -18,7 +18,7 @@ const EventCard = ({ handleSignupModal, event, handleEventModal }) => {
     }
 
     return (
-        <div className="card event-card" onClick={onEventClick}>
+        <div className="card" onClick={onEventClick}>
             <h3 className="title-small">{event.title}</h3>
             <div className="media-container">
                 <img className="resp-media" src={event.images[0].url} alt={event.images[0].title} />
@@ -26,16 +26,16 @@ const EventCard = ({ handleSignupModal, event, handleEventModal }) => {
             <div className="cardText">
                 <h3 className="title-large">{event.title}</h3>
                 <div className="detail">
-                    <div><h4>When</h4></div>
+                    <div><h4>When:</h4></div>
                     <div><p>{date}</p></div>
                     <div><p>{time}</p></div>
                 </div>
                 <div className="detail">
-                    <div><h4>Where</h4></div>
+                    <div><h4>Where:</h4></div>
                     <div><p>{event.location}</p></div>                                     
                 </div>                
-                <div className="shortdescription">{event.shortdescription}</div>
-                <input type="button" value="More Info" onClick={onEventClick} />                
+                <div className="shortdescription"><p>{event.shortdescription}</p></div>
+                <input className="button info-button" type="button" value="More Info" onClick={onEventClick} />                
             </div>
         </div>
     )

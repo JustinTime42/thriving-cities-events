@@ -4,7 +4,6 @@ import EventModal from './components/eventmodal/EventModal'
 import EventsList from './components/eventslist/EventsList'
 import Intro from './components/intro/Intro'
 import Navbar from './components/navbar/NavBar'
-import './App.css'
 
 class App extends Component {
   constructor() {
