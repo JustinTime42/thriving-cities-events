@@ -1,13 +1,10 @@
-import React, {Image} from 'react'
+import React from 'react'
 import './navbar.css'
 import logo from '../../logo.png'
 
+const NavBar = () => {
 
-const NavBar = ({handleSignupModal}) => {
-
-    const emailClick = () => {
-        handleSignupModal()
-    }
+    //opens and closes the burger menu
     const onClick = () => {
         let burgerID = document.getElementById("burgerButton")
         burgerID.classList.toggle("is-active")
@@ -17,8 +14,9 @@ const NavBar = ({handleSignupModal}) => {
             document.getElementById("navBar").style.height="60px"            
         }
     }
-    return (
-       
+
+    //displays title bar
+    return (       
         <header id="navBar">
             <div className="topnav">
                 <img src={logo} alt="Thriving Cities Logo" />
@@ -36,8 +34,7 @@ const NavBar = ({handleSignupModal}) => {
                 <div>
                     <a href="http://eepurl.com/dv5RL9" target="_blank">Get Our Email Newsletter</a>
                 </div>
-            </nav>            
-                  
+            </nav>  
         </header>     
     )
 }

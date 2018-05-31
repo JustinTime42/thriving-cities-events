@@ -1,13 +1,15 @@
 
+/* hides the nav buttons on small screens
+    navbar will create the burger button instead */
 .big-nav {
     display: none;
 }
 
+/* formats the introductory text */
 .intro {  
     padding-bottom: 1em;    
     font-family: "Roboto", sans-serif;
-    width: 100%;
-    
+    width: 100%;    
     background-color: white;  
 }
 
@@ -15,6 +17,7 @@
     align-self: center;
 }
 
+/*handles proportional resize of video depending on screen size */
 .intro-media {
     position: absolute;
     top: 0;
@@ -30,6 +33,7 @@
     padding-top: 56.25%;    
 }
 
+/*displays nav links below intro on larger screens */
 @media screen and (min-width:767px) {
 
     .big-nav {      
@@ -37,7 +41,6 @@
         display: flex;
         justify-content: flex-start;
         border-top: 2px solid #96938e;
-        border-bottom: 2px solid #96938e;
         margin-bottom: 1em;
     }
 
@@ -60,6 +63,7 @@
 
  }
 
+ /*redistributes white space on full size screens */
 @media screen and (min-width: 1200px) {
     .intro {
         

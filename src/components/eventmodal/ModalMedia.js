@@ -3,6 +3,7 @@ import { Carousel } from 'react-bootstrap'
 import './eventmodal.css'
 
 const ModalMedia = ({selectedEvent}) => 
+//create image carousel for the event modal
 {
     return (
         <Carousel>

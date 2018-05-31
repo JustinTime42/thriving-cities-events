@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import SignupModal from './components/signupmodal/SignupModal'
 import EventModal from './components/eventmodal/EventModal'
 import EventsList from './components/eventslist/EventsList'
 import Intro from './components/intro/Intro'
@@ -9,18 +8,13 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      showSignupModal: false,
       showEventModal: false,
       eventList:[],
       selectedEvent: {},
     }
   }
 
-  handleSignupModal = (event) => {
-    this.setState({showSignupModal: !this.state.showSignupModal})
-    this.setState({selectedEvent: event})
-  }
-
+  //displays or hides the event modal
   handleEventModal = (event) => {
     this.setState({showEventModal: !this.state.showEventModal})
     if (event) {
@@ -28,6 +22,7 @@ class App extends Component {
     }     
   }
 
+  //fetches the event list from ElegantCMS
   componentDidMount() {
     fetch("https://thrivingcities.herokuapp.com/events")
     .then(response => response.json())
@@ -41,11 +36,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <SignupModal show={this.state.showSignupModal} handleSignupModal={this.handleSignupModal} selectedEvent={this.state.selectedEvent}/>
-        <EventModal show={this.state.showEventModal} handleEventModal={this.handleEventModal} selectedEvent={this.state.selectedEvent} />
-        <Navbar handleSignupModal={this.handleSignupModal} />
+        <EventModal
+          show={this.state.showEventModal}
+          handleEventModal={this.handleEventModal}
+          selectedEvent={this.state.selectedEvent}
+        />
+        <Navbar />
         <Intro />
-        <EventsList handleSignupModal={this.handleSignupModal} eventList={this.state.eventList} handleEventModal={this.handleEventModal}/>
+        <EventsList
+          eventList={this.state.eventList}
+          handleEventModal={this.handleEventModal}
+        />
       </div>
     )
   }

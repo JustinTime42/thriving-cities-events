@@ -1,3 +1,9 @@
+/* puts burger menu on the right side of page */
+.hamburger {
+    align-self: flex-start;      
+}
+
+/*styles the contents of the title bar */
 #navBar  {
     color: #003993;
     background-color: white;    
@@ -17,32 +23,24 @@
     display: flex; 
 }
 
-.small-nav {
-    margin-top: 10px;
-    margin-right: 10px;
-    text-align: right;
-}
-
-.topnav a:hover {
-    color:grey;
-}
-
+/*styles the logo */
 .topnav img {
     height: 100%;
     width: auto;
   
 }
 
+/*styles the burger menu items */
 .topnav h2 {
     flex-basis: 100%;
 }
-
-
-
-.hamburger {
-    align-self: flex-start;      
+.small-nav {
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: right;
 }
 
+/*better font size for smaller screens */
 @media screen and (max-width: 767px) {
     .topnav h2 {
         font-size: 24px;
@@ -50,20 +48,10 @@
 }
 
 @media screen and (min-width: 767px) {
-
+    /* hides burger menu on larger screens*/
     .hamburger, .small-nav {
         display: none;
     }
-
-    .topnav {
-        flex-basis: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: space-between;
-        
-    }
-
-
 }
 
 

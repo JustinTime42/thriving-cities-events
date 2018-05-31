@@ -1,4 +1,4 @@
-.cardText {      
+.card-text {      
     padding-top: 1em;
     padding-left: 1em;
     display: flex; 
@@ -41,18 +41,21 @@
     align-self: center; 
     margin-right: 1em;
 }
+
 .title-small {
     padding-top: 10px;
 }
-
-.shortdescription {
-    display: none;
-}
-
 .title-large {
     display:none;    
 }
+/*hides description on smaller screens */
+.short-description {
+    display: none;
+}
 
+
+
+/*formats the card more horizontally on medium size screens */
 @media screen and (min-width:767px) {
 
     .card {
@@ -61,12 +64,13 @@
         border: none;
         padding: 0;
     }
-    .event-card {
-       
-        border-radius: 15px;
-        margin-bottom: 10px;
-    }
-    
+    .card-text {
+        flex-direction: column; 
+        flex-basis: 40%;    
+    }  
+    .detail {
+        align-self: center;
+    }      
     .info-button {
         align-self: flex-end;
         margin-bottom: 1em;
@@ -77,13 +81,7 @@
     .title-small {
         display: none;
     }
-    .cardText {
-        flex-direction: column; 
-        flex-basis: 40%;    
-    }  
-    .detail {
-        align-self: center;
-    }  
+
     .media-container {       
         width: 600px;
         height: auto;
@@ -96,15 +94,16 @@
     .resp-media {
         width: 100%;
         height: 100%;
-    }
-
-  
+    }  
 }
 
+/*redistributes white space on large screens */
 @media screen and (min-width:1200px) {
-    .cardText {
+
+    .card-text {
         flex-basis: 50%;
     }
+
     .detail {     
         font-size: 18px;  
         display: flex;
@@ -114,13 +113,12 @@
         flex-wrap: nowrap;
     }
 
-
-
     .detail div {
         margin-right: 1em;
     }
 
-    .shortdescription {
+    /*displays description on card on large screens */
+    .short-description {
         display: initial;
     }   
   

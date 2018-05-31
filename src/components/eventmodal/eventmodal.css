@@ -1,6 +1,4 @@
-.close-button {
-    text-align:right;
-}
+
 
 a {    
     align-self: center;
@@ -20,10 +18,6 @@ a {
     border: 0; 
 }
 
-.map-button {
-    margin-left: 1em;
-}
-
 .modal-links {
     text-align: right;
 }
@@ -32,7 +26,6 @@ a {
     padding: 1em;        
 }
 
-
 .modal-detail {
     display: flex;
     justify-content: center;
@@ -40,16 +33,25 @@ a {
     padding: 1em;
 }
 
+.map-button {
+    margin-left: 1em;
+}
+
 #event-map {
     width: 100%;    
     border: 0;    
 }
 
+/*adjust height to show or hide the map */
 .hide {
     height: 0;
 }
 
 .show {
     height: 400px;    
+}
+
+.close-button {
+    text-align:right;
 }
 

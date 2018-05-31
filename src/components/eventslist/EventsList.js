@@ -3,7 +3,8 @@ import EventCard from '../eventcard/EventCard.js'
 import './eventlist.css'
 
 const EventsList = ({ eventList, handleSignupModal, handleEventModal }) => {
- 
+
+    //generates the list of events from the data fetched from Elegant CMS
     return (        
         <div className="card-list">       
             {

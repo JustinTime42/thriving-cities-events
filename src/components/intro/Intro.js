@@ -4,6 +4,7 @@ const introText = "Thriving Cities is a group of unconventional urbanists with a
 
 const Intro = () => {
 
+    //displays the top introduction with video and text description of the site
     return (
         <div>
             <div className="intro">         

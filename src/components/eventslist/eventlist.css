@@ -1,9 +1,11 @@
+/*keeps the event list centered on page */
 .card-list {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
 
+/*changes the event card size as screen size increases */
 @media screen and (min-width: 560px) {
     .card-list {
         width: 560px;
