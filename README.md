@@ -4,7 +4,7 @@ I've created this with React, and it is fully responsive and looks great on any 
 
 The content on this site is managed with Elegant CMS and served through a heroku web server. This allows you to create and edit events without needing to know anything about web development or programming. Here are the steps for creating events:
 
-##Step 1. Log in to Elegant CMS plugin on the Heroku App.##
+#Step 1. Log in to Elegant CMS plugin on the Heroku App.#
 Click "Add Content". Here you will see all the available fields for setting up your event. The events on the website get populated from this information. Type in the name of the event, the description, date and time, address, and drag/drop any promotional images onto the appropriate fields. 
 
 ##Step 2. Create list in MailChimp##
