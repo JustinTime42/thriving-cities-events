@@ -2,7 +2,7 @@ import React from 'react'
 import {Marker, Map, InfoWindow, GoogleApiWrapper} from 'google-maps-react'
 
 export const MapContainer = (address, latLongs) => {
-    
+
     //generate google map for the event modal
     return (
         <Map google={this.props.google} zoom={14} initialCenter={latLongs}> 
@@ -20,5 +20,6 @@ export const MapContainer = (address, latLongs) => {
 }
 
 export default GoogleApiWrapper({
+    //paste your google maps API key here
     apiKey: ("AIzaSyBuD0XXzn8b_eCvL0IEsGIu7lg8vDNJyp0")
   })(MapContainer)
