@@ -1,7 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+Welcome to your new website!
 
-Below you will find some information on how to perform common tasks.<br>
-You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+I've created this with react, and it is fully responsive and looks great on any screen size. 
+
+The content on this site is managed with Elegant CMS, and served through a heroku web server. This allows you to create and edit events without needing to know anything about web development or programming. To create events like you see on the site, you simply enter the appropriate description, drag and drop some photos, select a time and date, and type in the address of the event.
+
+
 
 ## Table of Contents
 
